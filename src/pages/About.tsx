@@ -64,7 +64,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 leading-relaxed">
-                  To bridge the gap between academia and industry by providing world-class IT training programs that equip students with the skills, knowledge, and confidence needed to excel in today's competitive job market.
+                  To bridge the gap between academics and industry by providing world-class IT training programs that equip students with the skills, knowledge, and confidence needed to excel in today's competitive job market.
                 </p>
               </CardContent>
             </Card>
