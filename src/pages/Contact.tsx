@@ -41,19 +41,21 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Our Address",
-      details: ["123 Tech Park, IT Hub", "Mumbai, Maharashtra 400001", "India"],
+      details: ["StartIT Technologies Software Training and Placement Institute",
+"302,3rd floor, Beeramguda Main Rd, opp. to Yamaha show room","Patancheru, Telangana 502032"
+],
       color: "text-blue-600"
     },
     {
       icon: Phone,
       title: "Phone Number",
-      details: ["+91 98765 43210", "+91 98765 43211"],
+      details: ["+91 7993822718","+91 7993822719"],
       color: "text-green-600"
     },
     {
       icon: Mail,
       title: "Email Address",
-      details: ["info@startitplacement.com", "admissions@startitplacement.com"],
+      details: ["startittechnologies@gmail.com"],
       color: "text-purple-600"
     },
     {
@@ -192,7 +194,7 @@ const Contact = () => {
                 <CardContent>
                   <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9968434568857!2d72.8776!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c91b6b4f8b%3A0x6b1c0d9e4c8a7e9f!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4022.956718444376!2d78.29433288175906!3d17.509232340594032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb930af27676ff%3A0x19f82f723d28f944!2sStartIT%20Technologies%20Software%20Training%20and%20Placement%20Institute!5e1!3m2!1sen!2sin!4v1750575662135!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0, borderRadius: "0.5rem" }}
@@ -215,20 +217,21 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-blue-600" />
                     <div>
                       <p className="font-medium">Call Us Now</p>
-                      <p className="text-sm text-gray-600">+91 98765 43210</p>
+                      <p className="text-sm text-gray-600">+91 7993822718</p>
+                      <p className="text-sm text-gray-600">+91 7993822719</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-blue-600" />
                     <div>
                       <p className="font-medium">Email Support</p>
-                      <p className="text-sm text-gray-600">info@startitplacement.com</p>
+                      <p className="text-sm text-gray-600">startittechnologies@gmail.com</p>
                     </div>
                   </div>
                   <div className="pt-4">
-                    <Button className="w-full" variant="outline">
+                    {/* <Button className="w-full" variant="outline">
                       Schedule a Consultation
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
