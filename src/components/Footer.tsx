@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Code, Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Code, Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -29,6 +29,9 @@ const Footer = () => {
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
+              </a>
+               <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -66,17 +69,17 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">+91 98765 43210</span>
+                <span className="text-gray-300">+91 7993822718</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">info@startitplacement.com</span>
+                <span className="text-gray-300">startittechnologies@gmail.com</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-blue-400 mt-1" />
                 <span className="text-gray-300">
-                  123 Tech Park, IT Hub,<br />
-                  Mumbai, Maharashtra 400001
+                  302 , 3rd Floor , opp HDFC Bank,<br />
+                  Beerumguda,Pantanchervu , Telangana 502032 
                 </span>
               </li>
             </ul>
@@ -86,7 +89,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Start IT Training & Placement Wing. All rights reserved.
+              © 2025 Start IT Training & Placement. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
@@ -104,3 +107,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
