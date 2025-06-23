@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Code } from "lucide-react";
@@ -55,12 +56,12 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm">
+            {/* <Button variant="outline" size="sm">
               Login
-            </Button>
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
+            </Button> */}
+            {/* <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
               Get Started
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile menu button */}
@@ -94,12 +95,12 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-2">
-                <Button variant="outline" size="sm" className="w-full">
+                {/* <Button variant="outline" size="sm" className="w-full">
                   Login
                 </Button>
                 <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
                   Get Started
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
