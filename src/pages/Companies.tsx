@@ -92,10 +92,10 @@ const Companies = () => {
   ];
 
   const placementStats = [
-    { metric: "Average Package", value: "₹8.2 LPA", icon: TrendingUp },
-    { metric: "Highest Package", value: "₹15 LPA", icon: Award },
+    { metric: "Average Package", value: "₹2.5 LPA", icon: TrendingUp },
+    { metric: "Highest Package", value: "₹8 LPA", icon: Award },
     { metric: "Companies Visited", value: "50+", icon: Building2 },
-    { metric: "Students Placed", value: "500+", icon: Users }
+    { metric: "Students Placed", value: "100+", icon: Users }
   ];
 
   const categories = ["All", "Software Development", "Data Analytics", "Cloud Services", "Networking", "IT Support"];
@@ -153,7 +153,7 @@ const Companies = () => {
           </div>
 
           {/* Category Filter */}
-          <div className="flex justify-center mb-8 overflow-x-auto">
+          {/* <div className="flex justify-center mb-8 overflow-x-auto">
             <div className="flex gap-2 p-1 bg-white rounded-lg shadow-sm border min-w-max">
               {categories.map((category) => (
                 <Button
@@ -167,11 +167,11 @@ const Companies = () => {
                 </Button>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Companies Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredCompanies.map((company, index) => (
+            {/* {filteredCompanies.map((company, index) => (
               <Card key={company.name} className="hover:shadow-lg transition-shadow duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader>
                   <div className="flex items-center space-x-4">
@@ -198,7 +198,7 @@ const Companies = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            ))} */}
           </div>
         </div>
       </section>
@@ -211,7 +211,7 @@ const Companies = () => {
             <p className="text-xl text-gray-600">Hear from our successful alumni</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          {/* <div className="grid md:grid-cols-3 gap-6">
             {successStories.map((story, index) => (
               <Card key={story.student} className="animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
                 <CardHeader>
@@ -233,7 +233,7 @@ const Companies = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
