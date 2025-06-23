@@ -89,14 +89,14 @@ const Index = () => {
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Empowering students and professionals with world-class IT training and connecting them with leading companies for successful career placements.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
                 Browse Jobs <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="px-8 py-3">
                 Register Now
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -122,12 +122,12 @@ const Index = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Latest Job Openings</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">For Job Openings</h2>
             <p className="text-xl text-gray-600">Find your perfect opportunity across different education levels</p>
           </div>
 
           {/* Category Filter */}
-          <div className="flex justify-center mb-8">
+          {/* <div className="flex justify-center mb-8">
             <div className="flex gap-2 p-1 bg-white rounded-lg shadow-sm border">
               {categories.map((category) => (
                 <Button
@@ -140,53 +140,72 @@ const Index = () => {
                 </Button>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Job Cards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {jobOpenings.map((job, index) => (
-              <Card key={job.id} className="hover:shadow-lg transition-shadow duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            
+              <Card className="hover:shadow-lg transition-shadow duration-300 animate-fade-in">
                 <CardHeader>
                   <div className="flex justify-between items-start mb-2">
                     <Badge variant="secondary" className="bg-blue-100 text-blue-700">
-                      {job.category}
+                       Bachelor's Degree
                     </Badge>
-                    <Badge variant="outline">{job.type}</Badge>
+                    <Badge variant="outline">For Technical </Badge>
                   </div>
-                  <CardTitle className="text-lg">{job.title}</CardTitle>
-                  <CardDescription className="text-gray-600">
-                    {job.company} • {job.location}
-                  </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <div className="mb-4">
-                    <p className="text-sm text-gray-600 mb-2">Key Requirements:</p>
-                    <div className="flex flex-wrap gap-1">
-                      {job.requirements.map((req, idx) => (
-                        <Badge key={idx} variant="outline" className="text-xs">
-                          {req}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+                <CardContent> 
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">
                     Apply Now
                   </Button>
                 </CardContent>
               </Card>
-            ))}
+
+              <Card className="hover:shadow-lg transition-shadow duration-300 animate-fade-in">
+                <CardHeader>
+                  <div className="flex justify-between items-start mb-2">
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-700">
+                       Bachelor's Degree
+                    </Badge>
+                    <Badge variant="outline">For Non-Technical </Badge>
+                  </div>
+                </CardHeader>
+                <CardContent> 
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    Apply Now
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow duration-300 animate-fade-in">
+                <CardHeader>
+                  <div className="flex justify-between items-start mb-2">
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-700">
+                       ITI and Degree Discontinued
+                    </Badge>
+                    <Badge variant="outline">Any Domain</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent> 
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    Apply Now 
+                  </Button>
+                </CardContent>
+              </Card>
+
+            
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button variant="outline" size="lg">
               View All Jobs <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      {/* <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your IT Career?</h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -201,7 +220,7 @@ const Index = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
